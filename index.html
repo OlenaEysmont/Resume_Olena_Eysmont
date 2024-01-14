@@ -11,6 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oxanium:wght@400;500;600;700&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modal-market.css">
+        <link rel="stylesheet" href="./css/modal2.css">
+
 </head>
 
 
@@ -69,7 +72,7 @@
                             <li class="box-work">
                                 <div class="card-one">
                                     <a>
-                                        <svg class="buton-arrow">
+                                        <svg class="buton-arrow" id="openModalBtn">
                                             <use href="./svg/button_arrow.svg#button_arrow" widht="102px" height="53px" ></use>
                                         </svg>
                                     </a>
@@ -84,7 +87,7 @@
                             <li class="box-work">
                                 <div class="card-one">
                                     <a>
-                                        <svg class="buton-arrow">
+                                        <svg class="buton-arrow" id="openModalBtn2">
                                             <use href="./svg/button_arrow.svg#button_arrow"></use>
                                         </svg>
                                     </a>
@@ -246,5 +249,119 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="flex-content">
+                <div class="title-market-section">
+                    <h1 class="title-market">Market and Target Audience Research</h1>
+                    <img class="market-img" src="./Img/ux.png">
+                </div>
+                <span class="close" id="closeModalBtn">
+                    <svg class="svg-close-box">
+                        <use class="svg-close" href="/svg/close.svg#close"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="box-market">
+                <DIV class="market-background">
+                    <div class="market-section">
+                        <img class="number" src="./Img/1.png" alt="1">
+                        <div class="list-market">
+                            <h2 class="tittle-market">Competitor Analysis</h2>
+                            <li class="market-description">Identify major competitors in your niche.</li>
+                            <li class="market-description">Analyze their products, marketing strategies, and strengths.</li>
+                            <li class="market-description">Determine how you can stand out among competitors.</li>
+                        </div>
+                    </div>
+                    <div class="market-section">
+                        <img class="number" src="./Img/2.png" alt="1">
+                        <div class="list-market">
+                            <h2 class="tittle-market">Competitor Analysis</h2>
+                            <li class="market-description">Identify major competitors in your niche.</li>
+                            <li class="market-description">Analyze their products, marketing strategies, and strengths.</li>
+                            <li class="market-description">Determine how you can stand out among competitors.</li>
+                        </div>
+                    </div>
+                    <div class="market-section">
+                        <img class="number" src="./Img/3.png" alt="1">
+                        <div class="list-market">
+                            <h2 class="tittle-market">Researching the Intended Audience</h2>
+                            <li class="market-description">Define characteristics of your target audience, such as age, gender, location.</li>
+                            <li class="market-description">Conduct surveys or focus groups to gain a deeper understanding of the needs and preferences of your audience.</li>
+                            <li class="market-description">Use analytical tools to study user behavior online.</li>
+                        </div>
+                    </div>
+                    <div>
+                    
+                    </div>
+                </DIV>
+            </div>
+            <div>
+
+            </div>
+            
+        </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <div class="flex-content">
+                <div class="title-market-section">
+                    <h1 class="title-market">Wireframes Creation</h1>
+                    <img class="market-img" src="./Img/ux.png">
+                </div>
+                <span class="close" id="closeModalBtn2">
+                    <svg class="svg-close-box">
+                        <use class="svg-close" href="/svg/close.svg#close"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="box-market">
+                <div class="wf-info">
+                    <div>
+                        <p class="text-wf">
+                            The term "Wireframe Creation" refers to the development of the skeletal structure of an interface, typically
+                            representing a simple, low-fidelity layout of a webpage or application.
+                        </p>
+                        <p class="text-wf">
+                            This design phase aims to define the structure and arrangement of essential elements on the page without
+                            considering
+                            design details.
+                        </p>
+                    </div>
+                    <img class="wf-img" src="./Img/wireframes.png">
+                </div>
+                <div class="box-wf">
+                    <img class ="img-wf-line" src="./Img/line wf.png">
+                    <div class="wf-cards">
+                        <div class="wf-card">
+                            <h2 class="wf-card-title" >Page Structure</h2>
+                            <p class="wf-card-description">Wireframes help determine where various elements such as headers, text, images, buttons, and other components will be
+                            placed.</p>
+                        </div>
+                        <div class="wf-card">
+                            <h2 class="wf-card-title">Content Distribution</h2>
+                            <p class="wf-card-description">They show how content will be organized on the page to provide a logical and user-friendly interaction.</p>
+                        </div>
+                        <div class="wf-card">
+                            <h2 class="wf-card-title">Functionality</h2>
+                            <p class="wf-card-description">They assist in defining functional elements like forms, buttons, links, and other interactive components.</p>
+                        </div>
+                        <div class="wf-card">
+                            <h2 class="wf-card-title">Navigation</h2>
+                            <p class="wf-card-description">TWireframes outline how users will navigate the site or application, indicating different sections and transitions.</p>
+                        </div>
+                        <div class="wf-card">
+                        
+                    </div>
+                </div>
+            </div>
+            <div>
+    
+            </div>
+    
+        </div>
+    </div>
     <script src="/js/section.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/modal-2.js"></script>
 </body>
