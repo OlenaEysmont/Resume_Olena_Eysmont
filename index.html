@@ -27,7 +27,7 @@
                                     <li class="nav-text"><a>ABOUT ME</a></li>
                                     <li class="nav-text"><a>PORTFOLIO</a></li>
                                     <li class="nav-text"><a>CONTACT</a></li>
-                                    <li class="nav-text"><a>FAQs</a></li>
+                                    <li class="nav-text"><a class="nav-text" href="#FAQs">FAQs</a></li>
                                 </ul>
                             </nav>
                             <button class="button">GET TOUCH</button>
@@ -146,75 +146,81 @@
                     </div>
                     <div>
                         <div class="background-faqs">
-                            <div class="conteiner">
+                            <div id="FAQs" class="conteiner">
                                 <div class="section-faqs">
-                                    <h1>FAQs</h1>
+                                    <h1 class="title-faqs">FAQs</h1>
                                     <ul>
-                                        <li>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
+                                        <li class="faqs-line">
+                                            <svg class="line">
+                                                <use href="./svg/Line.svg#line" height="2px"></use>
                                             </svg>
                                         </li>
-                                        <li>
-                                            <p>What is the expected timeline for the project completion?</p>
-                                            <svg>
+                                        <li class="faqs-plus">
+                                            <p class="text-faqs">What is the expected timeline for the project completion?</p>
+                                            <svg class="plus">
                                                 <use href="./svg/plus.svg#plus"></use>
                                             </svg>
                                         </li>
-                                        <li>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
+                                        <li li class="faqs-plus">
+                                            <svg class="line">
+                                                <use href="./svg/Line.svg#line" height="2px"></use>
                                             </svg>
                                         </li>
-                                        <li>
-                                            <p>Can I provide input or request changes during the design process?</p>
-                                            <svg>
+                                        <li class="faqs-plus">
+                                            <p class="text-faqs">Can I provide input or request changes during the design process?</p>
+                                            <svg class="plus">
                                                 <use href="./svg/plus.svg#plus"></use>
                                             </svg>
                                         </li>
-                                        <li>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
+                                        <li class="faqs-plus">
+                                            <svg class="line">
+                                                <use href="./svg/Line.svg#line" height="2px"></use>
                                             </svg>
                                         </li>
-                                        <li>
-                                            <p>How will the design process unfold?</p>
-                                            <svg>
+                                        
+                                            <li class="faqs-plus">
+                                                <p class="text-faqs">How will the design process unfold?</p>
+                                                <svg class="plus">
+                                                    <use href="./svg/plus.svg#plus"></use>
+                                                </svg>
+                                            </li>
+                                    <li class="faqs-plus">
+                                        <svg class="line">
+                                            <use href="./svg/Line.svg#line" height="2px"></use>
+                                        </svg>
+                                    </li>
+                                        <li class="faqs-plus" onclick="toggleText()" onclick="changeImage()">
+                                            <div>
+                                                <p class="text-faqs">Do I need to provide content or images for the project?</p>
+                                                <p class="text-content" id="text-content">Yes, any content or specific images relevant to the project would be greatly
+                                                    beneficial. However, if needed, we can
+                                                    assist in content creation or recommend stock imagery options.</p>
+                                            </div>
+                                            <svg class="plus">
+                                                <use href="./svg/plus.svg#plus" id="changeableImage"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="faqs-plus">
+                                            <svg class="line">
+                                                <use href="./svg/Line.svg#line" height="2px"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="faqs-plus">
+                                            <p class="text-faqs">What happens after the project is completed?</p>
+                                            <svg class="plus">
                                                 <use href="./svg/plus.svg#plus"></use>
                                             </svg>
                                         </li>
-                                        <li>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
-                                            </svg>
-                                        </li>
-                                        <li>
-                                            <p>Do I need to provide content or images for the project?</p>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
-                                            </svg>
-                                        </li>
-                                        <li>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
-                                            </svg>
-                                        </li>
-                                        <li>
-                                            <p>What happens after the project is completed?</p>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
-                                            </svg>
-                                        </li>
-                                        <li>
-                                            <svg>
-                                                <use href="./svg/Line.svg#line"></use>
+                                        <li class="faqs-plus">
+                                            <svg class="line">
+                                                <use href="./svg/Line.svg#line" height="2px"></use>
                                             </svg>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="line-footer">
                             <img src="./Img/black_line.jpg">
                         </div>
                     </div>
@@ -223,21 +229,22 @@
             
             </main>
     </div>
-    <footer>
+    <footer class="footer">
         <div>
-            <h2>YOUR DESIGNER</h2>
-            <div>
-                <address >Odesa, Ukraine</address>
-                <ul>
-                    <li>
-                        <a href="olenaeysmontdesign@gmail.com" class="link">olenaeysmont@gmail.com</a>
-                    </li>
-                    <li class="contact-link">
-                        <a href="olena_eysmont" class="link">olena_eysmont</a>
+            <h2 class="footer-logo">YOUR DESIGNER</h2>
+            <div class="contact">
+                <address class='contact-link'>Odesa, Ukraine</address>
+                <ul class="box-contact">
+                    <li class="link">
+                        <a class="contact-link" href="mailto:olenaeysmontdesign@gmail.com">olenaeysmontdesign@gmail.com</a>
+                    <li class="link">
+                        <a class="contact-link"href="tel:+4733378901">+47 333 78 901</a>
+                        
                     </li>
             
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="/js/section.js"></script>
 </body>
